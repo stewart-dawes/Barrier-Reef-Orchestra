@@ -4,9 +4,10 @@ body {
 
 #mainbody
 {
-    color: white;
+    color: black;
     text-align: center;
-
+    background-color: black;
+    Margin-bottom: 2em;
 }
 
 #header
@@ -17,9 +18,9 @@ body {
 }
 #wrapper
 {
-    background-color: dodgerblue;
-    height: 30px;
 
+    height: 30px;
+   background: black;
 }
 
 #navMenu {
@@ -40,7 +41,7 @@ body {
     margin:0;
     float: left;
     position: relative;
-    background: dodgerblue;
+    background: black;
 
 }
 
@@ -51,8 +52,9 @@ body {
     height:30px;
     width: 150px;
     display:block;
-    color: black;
-    text-shadow:1px 1px 1px #000;
+    color: antiquewhite;
+
+
 }
 
 #navMenu ul ul {
@@ -66,14 +68,11 @@ body {
 }
 
 #navMenu li:hover {
-    background: grey;
-}
-
-#navmenu ul li:hover ul li a:hover{
-    background: lightgray;
-    color: white;
+    background: dodgerblue;
 
 }
+
+
 
 #navMenu ul li:hover > ul{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -83,7 +82,7 @@ body {
     color: white;
 }
 
-#navmenu ul li ul li a:hover{ background-color: gray;}
+
 
 .clearfloat{
     clear:both;
@@ -99,8 +98,67 @@ body {
 #textbox {
     height: 200px;
     width: 200px;
+    color: black;
+    border: thin solid black;
+}
+
+.breakoutbox{
+    display: inline-block;
+    position: center;
+    margin: 0.5%;
+    float: left;
+    width: 23%;
+    height: 220px;
+    background-color: lightgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5em;
+    font-size: 0.5em;
+}
+
+.overtext {
+   position: relative;
+    widh: 100%;
+}
+
+h2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    }
+
+h2 span{
     color: white;
-    border: solid white;
+    letter-spacing:-1px;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+h2 span .spacer {
+    padding: 0.5px;
+}
+
+.container
+{
+    height: 350px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+#footer
+{
+    margin-top: 2em;
+    height: 1em;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+
 }
 
 
@@ -129,10 +187,7 @@ a:active { color: red; }
     background: black
 }
 
-#footer
-{
-    padding: 1em 2em;
-}
+
 
 /*this part fails- no idea why though
 #contactlist li
@@ -195,12 +250,7 @@ form
     line-height: 2em
 }
 
-.container
-{
-    width: 70em;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .nav
 {

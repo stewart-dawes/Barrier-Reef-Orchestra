@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <title>Barrier Reef Orchestra</title>
     <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+
 </head>
+<body onload="currentSlide(1);">
 
-<body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div id="header">
         <img src="bro_logo_black.png" alt="BRO Logo">
 
@@ -16,94 +25,154 @@
         <div id="navMenu">
 
             <ul>
-                <li><a href="#">Home</a>
+                <li><a href="index.html">Home</a>
                 </li>
-                <li><a href="#">Performances</a>
+                <li><a href="performances.html">Performances</a>
                 <ul>
-                    <li><a href="#">What's on</a></li>
-                    <li><a href="#">Past performances</a></li>
+                    <li><a href="whats_on.html">What's on</a></li>
+                    <li><a href="past_performances.html">Past performances</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Buy Tickets</a>
+                <li><a href="buy_tickets.html">Buy Tickets</a>
                 </li>
-                <li><a href="#">Join Us</a>
+                <li><a href="join_us.html">Join Us</a>
                     <ul>
-                        <li><a href="#">Players</a></li>
-                        <li><a href="#">Non-players</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="non_players.html">Non-players</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Support Us</a>
+                <li><a href="support_us.html">Support Us</a>
                     <ul>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Benefactors</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="benefactors.html">Benefactors</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About Us</a>
+                <li><a href="about_us.html">About Us</a>
                     <ul>
-                        <li><a href="#">The Orchestra</a></li>
-                        <li><a href="#">Orchestra Guests</a></li>
-                        <li><a href="#">Artists</a></li>
-                        <li><a href="#">Committee</a></li>
+                        <li><a href="the_orchestra.html">The Orchestra</a></li>
+                        <li><a href="guest_conductors.html">Guest Conductors</a></li>
+                        <li><a href="artists.html">Guest Artists</a></li>
+                        <li><a href="life_members.html">Life Members</a></li>
+                        <li><a href="committee.html">Committee</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Media</a>
+                <li><a href="media.html">Media</a>
                     <ul>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Bulletin Board</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="bulletin_board.html">Bulletin Board</a></li>
+                        <li><a href="http://www.facebook.com/nqorchestra" target="_blank">Facebook</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact Us</a>
-                    <ul>
-                        <li><a href="#">Form</a></li>
-                    </ul>
+                <li><a href="contact_us.html">Contact Us</a>
                 </li>
             </ul>
             <br>
-<hr>
+
+            <hr>
         </div>
     </div>
+    </div>
 
-    <div id="mainbody">
-        <p><img src="background_bro_01.jpg" height="500px" width="1000px" alt="placeholder for slide show"></p>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="2.jpg" style="width:100%">
+    </div>
+    <!--can add more pictures here-->
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
         <div class="container">
-           <p>TEST AREA</p>
-            <p>
-            What I want to achieve here is four boxes, horizontal alignment, evenly spaced within the container div. [done]<br>
-            Then I want to overlay the boxes with text in it's own box 75% transparent background [created Div ID overtext]<br>
-            This kinda works, but is in the wrong position.
+            <a href="whats_on.html">
             <div class="breakoutbox">
-            <img src="TSV%20Masterworks%20A7.jpg" height="200px">
+            <img src="2017-Concerts-Program.jpg" height="400px">
+            <div class="breakout_text">
+                    <span>Next performance:<span class="spacer"></span><br />
+                        <span class = "spacer"></span>Beethoven- Sat 19 Aug</span>
             </div>
+            </div>
+            </a>
+            <a href="players.html">
             <div class="breakoutbox">
-            <img src="JamesMorrison250.jpg" height ="200px"><br>
-                Featured artist (random)<br>
+            <img src="together.jpg" alt="New players needed">
+                <div class="breakout_text">
+                    <span>Join Us:<span class="spacer"></span><br />
+                        <span class = "spacer"></span>Players needed now!</span>
+                </div>
+
             </div>
-                <div class="breakoutbox">
-                Box 3: <br>
-                    Facebook mini feed<br>
-            </div>
-            <div class="breakoutbox">
-                <img src="bunnings-warehouse-web.jpg" width="100%"><br>
-                <img src="rsl-qld-web.jpg" width = "25%">
-                <img src="townsville-council-logo.jpg" width="25%">
-                sponsor logos (all in here)<br>
-            </div>
-            </p>
+            </a>
 
 
+        <a href="artists.html">
+        <div class="breakoutbox">
 
+            <script type="text/javascript">
+                <!--
+                var imlocation = "guest_artists/";
+                var currentdate = 0;
+                var image_number = 0;
+                function ImageArray (n) {
+                    this.length = n;
+                    for (var i =1; i <= n; i++) {
+                        this[i] = ' '
+                    }
+                }
+                image = new ImageArray(10)
+                image[0] = 'Adam Lopez'
+                image[1] = 'Blair Harris'
+                image[2] = 'David Hudson'
+                image[3] = 'James Morrison'
+                image[4] = 'Jennifer Bradstreet'
+                image[5] = 'Ji Won Kim'
+                image[6] = 'Leah Li'
+                image[7] = 'Rebecca Chan'
+                image[8] = 'Stefan Cassomenos'
+                image[9] = 'Yoshika Masuda'
+                var rand = 60/image.length
+                function randomimage() {
+                    currentdate = new Date()
+                    image_number = currentdate.getSeconds()
+                    image_number = Math.floor(image_number/rand)
+                    return(image[image_number])
+                }
+                document.write("<img src='" + imlocation + randomimage() + ".jpg"+ "' height='400px'> " +
+                    "<div class='breakout_text'>Featured guest artist:<br>" +
+                    randomimage() +
+                    "</div>");
 
-
-
-        </div>
+                //-->
+            </script>
     </div>
-</body>
+        </a>
+            <div class="breakoutbox">
+                <div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-tabs="timeline" data-width="350" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/nqorchestra" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra</a></blockquote></div>
 
+            </div>
+            <br>
+            <div class="breakoutbox">
+
+            </div> <div class="breakoutbox">
+
+        </div> <div class="breakoutbox">
+
+        </div><br>
+
+
+</div>
+
+<hr>
 
     <div ID="footer">
         (c) 2017 - compiled by: JC425420 Stewart Dawes, JC324549 Max Dunsmore, JC282231 James Collison.<br>
         A part of CP1406 Assignment 2
     </div>
-
+    </div>
+</div>
+        </body>
 </html>

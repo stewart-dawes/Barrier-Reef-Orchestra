@@ -6,6 +6,10 @@ body {
     font-family: "Arial", "Times New Roman","halvetica", cursive;
 }
 
+hr {
+    border-color: darkorange;
+}
+
 /* everything below here is related to the common header for the site */
 
 #header {
@@ -16,26 +20,36 @@ body {
 }
 #wrapper
 {
-    margin: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 0;
     height: 30px;
     background: black;
     text-align: center;
+    horiz-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
+
 #navMenu {
-    margin: 0;
     padding: 0;
     line-height: 30px;
     color: black;
     text-align: center;
+    margin-right: auto;
+    margin-bottom: 50px;
+
 }
 
 #navMenu ul{
     margin:0;
     padding:0;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #navMenu li {
@@ -45,6 +59,10 @@ body {
     float: left;
     position: relative;
     background: black;
+    transition: .25s ease-in;
+    border-radius: 5px 5px 0 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #navMenu ul li a{
@@ -54,44 +72,108 @@ body {
     width: 150px;
     display:block;
     color: antiquewhite;
+
+}
+
+#navMenu ul ul li{
+    border-radius: 0 0 0 0;
 }
 
 #navMenu ul ul {
     position: absolute;
     visibility:hidden;
     top:30px;
+
 }
 
 #navMenu ul li:hover ul{
     visibility: visible;
+    transition: .25s ease-in;
+    border-radius: 0;
 }
 
 #navMenu li:hover {
 
     background: darkgray;
+
 }
+
 
 #navMenu ul li:hover > ul{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: thin solid white;
+    transition: .25s ease-in;
+
 }
 
 #navmenu a:hover {
     color: white;
 }
 
+.mainbody h2, h4{
+    text-align: left;
+    color: white;
+}
+
+.orchestra_list{
+    text-align: left;
+}
+
+.orchestra_list table{
+    width:800px;
+}
+
+.orchestra_list table th{
+    font-size: 0.9em;
+    border: none;
+    font-weight: 100;
+    min-width: 200px;
+}
+
+.orchestra_list table tr{
+    font-size: 0.9em;
+    border: none;
+}
+
 /* .container used on first and second level pages to provide white box for content */
 
 .container
 {
-    height: 350px;
+    height: auto;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    padding-top: 2em;
+    background-color: black;
+    padding-top: 0;
     padding-bottom: 2em;
+    text-align: center;
+    horiz-align: center;
+    color: white;
+    margin-bottom: 50px;
 }
 
+.container h2{
+    text-align: left;
+    font-size: x-large;
+}
+
+.committee_table{
+    margin-left: 100px;
+
+    margin-right: 0;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+    border: solid black thin;
+}
+
+.committee_table h2 {
+    color: black;
+}
+
+.committee_table tr th{
+    border: thin solid black;
+}
 
 /* HOME PAGE SPECIFIC */
 
@@ -99,25 +181,111 @@ body {
 
 #mainbody
 {
-    color: black;
+    color: white;
     text-align: center;
     background-color: black;
     Margin-bottom: 2em;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+.second_level_box {
+    display: inline-block;
+    position: relative;
+    margin: 0.5%;
+    height: 300px;
+    width: 300px;
+    background-color: lightgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    font-size: 2em;
+    opacity: 1;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.second_level_box:hover{
+    opacity:0.5;
+}
+
+.second_level_box a:link {text-decoration: none}
+.second_level_box a:link {color:white}
+.second_level_box a:visited {color:white}
+.second_level_box a:hover {color:gray}
+
+.second_level_box_text{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: -1px;
+    background: rgb(80, 80, 80);
+    background: rgba(80,80,80,0.7)
+}
+
+.second_level_box:hover .second_level_box_text{
+    background: rgb(80, 80, 80);
+    background: rgba(80,80,80,1)
+}
+
+.second_level_box_text span.spacer{
+    padding: 0.5px;
+}
+
+
 
 /* .breakoutbox used for the four boxes at the bottom of the home page */
 
 .breakoutbox{
     display: inline-block;
-    position: center;
-    margin: 0.5%;
+    margin: 0.8%;
     float: left;
     width: 23%;
-    height: 220px;
-    background-color: lightgray;
+    height: 400px;
+    background-color: black;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0.5em;
-    font-size: 0.5em;
+    padding: 0em;
+    font-size: 1em;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    border: white thin solid;
+    overflow: hidden;
+}
+
+
+
+.breakout_text{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    background: rgb(80, 80, 80);
+    background: rgba(80,80,80,0.7);
+
+}
+
+.breakoutbox:hover .breakout_text{
+    background: rgb(80, 80, 80);
+    background: rgba(80,80,80,1)
+}
+
+.breakout_text span.spacer{
+    padding: 0.5px;
 }
 
 /* INDIVIDUAL PROFILE PAGE USE */
@@ -136,17 +304,119 @@ h1{
 }
 /* .artist_body for use on individual profile pages */
 
+h2, h3, h4, h5, h6{
+    color: white;
+}
+
+
+
+.artist_home{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.artist_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}
+
+
+.committee_home{
+
+    text-align: right;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+    horiz-align: right;
+    margin-top: -200px;
+
+}
+.committee_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 900px;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding: 10px;
+    margin-right: 100px;
+    text-align: left;
+    margin-bottom:10px;
+}
+
+.committee_box:hover{
+    opacity: 1;
+}
+
+.committee_box a:link {color:blue}
+.committee_box a:visited {color:blue}
+.committee_box a:hover {color:gray}
+
+.float_artist{
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.artist_box:hover{
+    opacity:1;
+}
+
+
+.artist_box a:link {color:blue}
+.artist_box a:visited {color:blue}
+.artist_box a:hover {color:gray}
+
 .artist_body {
     color: white;
     text-align: left;
     background-color: black;
     Margin-bottom: 2em;
     width: 1200px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     border: thin white solid;
 }
 
+.featured_artist_breakout{
+    border: darkslategray thin solid;
+    height: 400px;
+    width: 15%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+    float: left;
+    overflow: hidden;
+}
 
 /* Common foot styling */
 
@@ -159,7 +429,7 @@ h1{
     background-color: black;
     color: white;
     font-size: 0.8em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 a.footer:link {text-decoration: none}
@@ -167,123 +437,370 @@ a.footer:link {color:white}
 a.footer:visited {color:white}
 a.footer:hover {color:gray}
 
-
-
-/* EVERYTHING BELOW HERE IS TEST STUFF AND WILL LIKELY BE DELETED IN FUTURE */
-
-/*
-a:link { color: darkslateblue; }
-a:visited { color: gray; }
-a:focus { color: gray; }
-a:hover { color: white; }
-a:active { color: red; }
-/*
-.float
-{
-    float: right;
-    Clear: left;
-    padding: 1em;
-}
-
-#mainbody
-{
-    font-size: 1.2em;
-}
-
-#announcements
-{
+#formbox{
+    background-color: black;
     color: white;
-    background: black
+}
+
+form{
+    horiz-align: right;
+    background-color: transparent;
 }
 
 
-
-/*this part fails- no idea why though
-#contactlist li
-{
-    text-decoration: none;
-}
-
-
-.nav ul
-{
-    margin: 0;
-    padding: 0;
-}
-
-.nav li
-{
-    display: inline;
-    margin-right: 1em;
-}
-
-.nav li a
-{
-    color: #fff;
-}
-
-.nav li > a
-{
-    text-decoration: none;
-}
-
-.links li > a
-{
-    text-decoration: none;
-}
-
-.centeredbody
-{
+.sponsor_logos{
+    color:white;
     text-align: center;
+    margin-top:50px;
 }
 
+.sponsor_logos img{
+    height: 200px;
+    width: 100px;
+}
 
-h3 + h4 { margin-top: 2em; }
-
-
-
-
-*/
-/* old stuff
-body
-{
-    margin: 0;
+.sponsor{
+    display: inline-block;
+    margin-left: 100px;
+    margin-right:0;
+    margin-top: 0;
+    float: left;
+    width: auto;
+    height: auto;
+    background-color: black;
     padding: 0;
-    font-family: arial; helvetica;
+    font-size: 1em;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    border: white thin solid;
+    overflow: hidden;
 }
 
-form
-{
-    border: 1px solid black;
-    padding: 1em 2em;
-    line-height: 2em
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_active {
+    background-color: #717171;
 }
 
 
+table, th, tr {
+    border: thin solid white;
+    text-align: left;
+    font-size: larger;
 
-.nav
-{
-    padding: 1em 2em;
-    background: dodgerblue;
 }
 
-.clearfloat{
-    clear:both;
+th, tr {
+    padding-left: 5px;
+    padding-right:10px;
+}
+
+.table_bold{
+    font-weight: bold;
+}
+
+.table_normal{
+    font-weight: normal;
+}
+
+
+#life_members {
+    padding: 0;
+    line-height: 30px;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-bottom: 400px;
+    margin-top: 50px;
+
+}
+
+#life_members ul{
     margin:0;
     padding:0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-#main
-{
-    margin: 1em 2em;
+#life_members li {
+    list-style:none;
+    padding:0;
+    margin:0;
+    float: left;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    margin-left: 20px;
+    margin-right: auto;
+
 }
 
-#textbox {
-    height: 200px;
-    width: 200px;
-    color: black;
-    border: thin solid black;
+#life_members ul li{
+    text-decoration:none;
+    height:auto;
+    width: auto;
+    display:block;
+    color: antiquewhite;
+    margin-left:20px;
+    margin-top: 150px;
+    text-align: left;
 }
-*/
-/*drop down menus*/
 
+#life_members ul li ul li{
+    margin-left: auto;
+    width: 400px;
+    font-size: 0.8em;
+    line-height: 20px;
+}
+
+#life_members ul ul {
+    position: absolute;
+    visibility:hidden;
+    top:30px;
+
+}
+
+#life_members ul li:hover ul li{
+    visibility: visible;
+
+    border-radius: 0 0 5px 5px;
+    background-color: black;
+    border: thin white solid;
+    display:block;
+    padding: 5px;
+}
+
+#life_members li:hover {
+
+    background: darkorange;
+}
+
+#life_members a:hover {
+    color: white;
+}
+
+.ticket_form{
+    width: 500px;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+
+.breakoutbox #sponsor h3 {
+    font-family: antic-slab;
+    font-style: normal;
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: -5px;
+}
+
+.breakoutbox #sponsor h4 {
+    font-family: antic-slab;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+}
+
+#pastconcerts{
+    text-align: left;
+}
+
+#pastconcerts input[type=button]{
+    min-width: 1000px;
+    line-height: 30px;
+    font-family: antic-slab;
+    font-size: large;
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    text-align: left;
+}
+
+#pastconcerts input[type=button]:active{
+    border:none;
+}
+
+#pastconcerts input[type=button]:visited{
+    border:none;
+}
+
+
+.join_us_home{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.join_us_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}
+.benefactor_home{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.benefactor_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}
+
+.sponsor_form_home{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.sponsor_form_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}
+.buy_tickets_home{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.buy_tickets_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}
+.sponsor_box{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    text-align: left;
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+.sponsor_box{
+    border: darkslategray thin solid;
+    height: 140px;
+    width: 98%;
+    display: inline-block;
+    transition: .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: white;
+    text-decoration: none;
+    opacity:0.75;
+    padding:10px;
+}

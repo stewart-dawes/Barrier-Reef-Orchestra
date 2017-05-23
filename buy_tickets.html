@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <title>Barrier Reef Orchestra</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<div id="header">
+    <img src="bro_logo_black.png" alt="BRO Logo">
+
+    <div id="wrapper">
+
+        <div id="navMenu">
+
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="performances.html">Performances</a>
+                    <ul>
+                        <li><a href="whats_on.html">What's on</a></li>
+                        <li><a href="past_performances.html">Past performances</a></li>
+                    </ul>
+                </li>
+                <li><a href="buy_tickets.html">Buy Tickets</a>
+                </li>
+                <li><a href="join_us.html">Join Us</a>
+                    <ul>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="non_players.html">Non-players</a></li>
+                    </ul>
+                </li>
+                <li><a href="support_us.html">Support Us</a>
+                    <ul>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="benefactors.html">Benefactors</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_us.html">About Us</a>
+                    <ul>
+                        <li><a href="the_orchestra.html">The Orchestra</a></li>
+                        <li><a href="guest_conductors.html">Guest Conductors</a></li>
+                        <li><a href="artists.html">Guest Artists</a></li>
+                        <li><a href="life_members.html">Life Members</a></li>
+                        <li><a href="committee.html">Committee</a></li>
+                    </ul>
+                </li>
+                <li><a href="media.html">Media</a>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="bulletin_board.html">Bulletin Board</a></li>
+                        <li><a href="http://www.facebook.com/nqorchestra" target="_blank">Facebook</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+            <br>
+
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="mainbody">
+    <div class="container">
+
+        <form class = "ticket_form" method="post">
+            <fieldset>
+                   First Name: <br>
+            <input placeholder="First Name" type="text" tabindex="1" name="firstname"><br>
+            Surname:<br>
+            <input placeholder="Surname" type="text" tabindex="2" name="lastname"><br>
+            Contact phone number:<br>
+            <input placeholder="Phone number" type="text" tabindex="3" name="phone"><br>
+            Contact email address:<br>
+            <input placeholder="Email address" type="email" tabindex="4" name="email"><br>
+            </fieldset>
+            <fieldset>
+                Performance: <br>
+            <select id = "performance" tabindex="5">
+                <option value="1">Masterworks</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+                <option value="4">Fourth</option>
+                <option value="5">Fifth</option>
+            </select><br>
+            Tickets:
+            Adult - $38:
+            <select id = "adult_tix" tabindex="6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            Concession - $34:
+            <select id = "concessions_tix" tabindex="7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            NQE Member - $32:
+            <select id = "NQE_tix" tabindex="8">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            Student - $15:
+            <select id = "student_tix" tabindex="9">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+                Pickup options:<br>
+                Door <input type="radio" value="door" tabindex="10" name="pickup">
+                Email <input type="radio" value="email" tabindex="11" name="pickup">
+
+            </fieldset>
+            <br>
+            <button name="reset" type="reset" id="reset_tix" data-reset="...Sending" tabindex="10">Reset</button>
+            <button type="submit" name="door">Pay at door</button>
+            <button type="submit" name="paypal"><img src="paypal%20donate.jpg" height="30px"></button>
+        </form>
+
+Buy tickets now for any of the upcoming performances by using the purchase form to the left. <br>
+        Once your order has been confirmed as paid, your tickets will be emailed or available at the door as requested.
+
+    </div>
+</div>
+</body>
+
+<br><br><br><br><br><br><br>
+<div ID="footer">
+    (c) 2017 - compiled by: JC425420 Stewart Dawes, JC324549 Max Dunsmore, JC282231 James Collison.<br>
+    A part of CP1406 Assignment 2
+</div>
+
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
 </head>
 
 <div id="header">
-    <img src="bro_logo_black.png" alt="BRO Logo">
+    <img src="site_images/bro_logo_black.png" alt="BRO Logo">
 
     <div id="wrapper">
 
@@ -57,48 +57,53 @@
         </div>
     </div>
 </div>
-<div class="mainbody">
-   <h2>Become a benefactor</h2>
-        <div class="benefactor_box">
 
+<div class="mainbody">
+
+    <div class="container">
+
+        <div class="buy_tickets_home">
+            <div class="benefactor_box">
+                <div class="float_artist"> </div>
             <form id="sponsor" action="" method="post">
                 <h3>Benefactor Form</h3>
                 <fieldset>
 
-                    <input placeholder="First Name" type="text" tabindex="1" required autofocus size="40" maxlength="40">
+                    <input name="first_name" placeholder="First Name" type="text" tabindex="1" required autofocus size="40" maxlength="40">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Surname" type="text" tabindex="1" required autofocus size="40" maxlength="40">
+                    <input name="surname" placeholder="Surname" type="text" tabindex="1" required autofocus size="40" maxlength="40">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Company name" type="text" tabindex="2" required size="40" maxlength="40">
+                    <input name="company" placeholder="Company name" type="text" tabindex="2" required size="40" maxlength="40">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="3" required size="40" maxlength="50">
+                    <input name="email" placeholder="Your Email Address" type="email" tabindex="3" required size="40" maxlength="50">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" tabindex="4" required size="40" maxlength="10">
+                    <input name="phone" placeholder="Your Phone Number" type="tel" tabindex="4" required size="40" maxlength="10">
                 </fieldset>
                 <fieldset>
                     I wish to become a Barrier Reef Orchestra Benefactor and Contribute $
                 </fieldset>
                 <fieldset>
-                    <input placeholder="" type="text" tabindex="4" required size="40" maxlength="10">
-                </fieldset>
-                By Cheque
-                <input type="radio" value="door" tabindex="10" name="Cheque"> Eftpos
-                <input type="radio" value="email" tabindex="11" name="Eftpos"> Cash
-                <input type="radio" value="email" tabindex="11" name="pickup">
+                    <input name="amount" placeholder="" type="text" tabindex="4" required size="40" maxlength="10">
                 </fieldset>
                 <fieldset>
+
+                    <input name="payment" type="radio" tabindex="10" id="Cheque" value="Cheque"> <label for="Cheque">Cheque</label>
+                <input name="payment" type="radio" tabindex="11" id="Eftpos" value="Eftpos"> <label for="Eftpos">Eftpos</label>
+                <input name="payment" type="radio" tabindex="11" id="pickup" value="pickup"> <label for="pickup">Pickup</label>
+                </fieldset>
+
                     <fieldset>
                         Please place me/us on the benefactor roll as
                     </fieldset>
                     <fieldset>
-                        <input placeholder="" type="text" tabindex="4" required size="40" maxlength="10">
+                        <input name="pref_name" placeholder="Preffered name" type="text" tabindex="4" required size="40" maxlength="10">
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Type your benefactor comments here ..." rows="8" cols="42" tabindex="5" required size="40" maxlength="250"></textarea>
+                        <textarea name="comments" placeholder="Type your benefactor comments here ..." rows="8" cols="42" tabindex="5" required maxlength="250"></textarea>
                     </fieldset>
                     <fieldset>
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -107,9 +112,9 @@
             </form>
         </div>
 
-        <div class="benefactor_box">
+        <div class="join_us_box">
             <div class="float_artist"> </div>
-            <h3>Benefactor Details</h3>
+            <h1>Become a benefactor</h1>
             <br>
             <p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert program and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season’s Launch function. Donations are tax deductible.</p>
 
@@ -119,9 +124,9 @@
 
             <p><strong>North Queensland Ensembles Inc<br>
                 Barrier Reef Orchestra Benefactor’s Roll
-            </p>
 
-            <p>We wish to thank our benefactors for their generous support:<br></strong>
+
+            We wish to thank our benefactors for their generous support:<br></strong>
             Dr Kevin Arlett<br>
             Carol Dall’Osto<br>
             Ray Gartrell<br>
@@ -150,7 +155,8 @@
         </p>
         <p></p>
     </div>
-
+</div>
+</div>
     <div id="footer">
         <a href="index.html" class="footer">Home</a> / <a href="support_us.html" class="footer">Support Us</a> / Benefactors<br>
         <br>(c) 2017 - compiled by: JC425420 Stewart Dawes, JC324549 Max Dunsmore, JC282231 James Collison.
@@ -160,6 +166,6 @@
 
 
 
-    </body>
+
 
 </html>

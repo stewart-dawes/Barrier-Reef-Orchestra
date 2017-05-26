@@ -18,7 +18,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="header">
-    <img src="bro_logo_black.png" alt="BRO Logo">
+    <img src="site_images/bro_logo_black.png" alt="BRO Logo">
 
         <div id="wrapper">
             <div id="navMenu">
@@ -104,7 +104,7 @@
     <div class="container">
         <a href="whats_on.html">
         <div class="breakoutbox">
-        <img src="2017-Concerts-Program.jpg" height="400px">
+        <img src="site_images/2017-Concerts-Program.jpg">
         <div class="breakout_text">
                 <span>Next performance:<span class="spacer"></span><br />
                     <span class = "spacer"></span>Beethoven- Sat 19 Aug</span>
@@ -113,7 +113,7 @@
         </a>
         <a href="https://whatson.townsville.qld.gov.au/events/community-events">
         <div class="breakoutbox">
-            <img src="tcc_events_logo.png" alt="TCC logo" width="100%">
+            <img src="site_images/tcc_events_logo.png" alt="TCC logo" >
             <img src="site_images/Instruments_Horns_107.jpg">
             <div class="breakout_text">
                 <span>Buy tickets now:<span class="spacer"></span><br />
@@ -124,7 +124,7 @@
 
         <a href="join_us.html">
         <div class="breakoutbox">
-        <img src="together.jpg" alt="New players needed">
+        <img src="site_images/together.jpg" alt="New players needed">
             <div class="breakout_text">
                 <span>Join Us:<span class="spacer"></span><br />
                     <span class = "spacer"></span>Players needed now!</span>
@@ -147,22 +147,22 @@
                     this[i] = ' '
                 }
             }
-            image = new ImageArray(10)
-            image[0] = 'Adam Lopez'
-            image[1] = 'Blair Harris'
-            image[2] = 'David Hudson'
-            image[3] = 'James Morrison'
-            image[4] = 'Jennifer Bradstreet'
-            image[5] = 'Ji Won Kim'
-            image[6] = 'Leah Li'
-            image[7] = 'Rebecca Chan'
-            image[8] = 'Stefan Cassomenos'
-            image[9] = 'Yoshika Masuda'
-            var rand = 60/image.length
+            image = new ImageArray(10);
+            image[0] = 'Adam Lopez';
+            image[1] = 'Blair Harris';
+            image[2] = 'David Hudson';
+            image[3] = 'James Morrison';
+            image[4] = 'Jennifer Bradstreet';
+            image[5] = 'Ji Won Kim';
+            image[6] = 'Leah Li';
+            image[7] = 'Rebecca Chan';
+            image[8] = 'Stefan Cassomenos';
+            image[9] = 'Yoshika Masuda';
+            var rand = 60/image.length;
             function randomimage() {
-                currentdate = new Date()
-                image_number = currentdate.getSeconds()
-                image_number = Math.floor(image_number/rand)
+                currentdate = new Date();
+                image_number = currentdate.getSeconds();
+                image_number = Math.floor(image_number/rand);
                 return(image[image_number])
             }
             document.write("<img src='" + imlocation + randomimage() + ".jpg"+ "' height='400px'> " +
@@ -190,7 +190,7 @@
     </a>
 
     <div class="breakoutbox">
-    <div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-tabs="timeline" data-width="350" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/nqorchestra" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra</a></blockquote></div>
+    <div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-tabs="timeline" data-width="350" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/nqorchestra" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra Facebook Page</a></blockquote></div>
     </div>
 
    <img src="site_images/stringsandwind.jpg" width="45%">
@@ -209,11 +209,10 @@
     <hr>
 
     <div ID="footer">
-        <a href="index.html" class="footer">home</a><br>
+        <a href="index.html" class="footer">home</a><br><br>
         (c) 2017 - compiled by: JC425420 Stewart Dawes, JC324549 Max Dunsmore, JC282231 James Collison.<br>
         A part of CP1406 Assignment 2
         </div>
-    </div>
 
 </body>
 </html>

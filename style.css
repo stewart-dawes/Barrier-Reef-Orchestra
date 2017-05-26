@@ -1,14 +1,14 @@
-
 /* body used for site wide format */
 
 body {
     background-color: black;
-    font-family: "Arial", "Times New Roman","halvetica", cursive;
+    font-family: "Arial", "Times New Roman", "halvetica", cursive;
 }
 
 hr {
-    border-color: darkorange;
+    border-color: #40B8FF;
 }
+
 
 /* everything below here is related to the common header for the site */
 
@@ -18,10 +18,10 @@ hr {
     background-color: black;
     text-align: center;
 }
-#wrapper
-{
-    margin-left: 100px;
-    margin-right: 100px;
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0;
@@ -33,29 +33,32 @@ hr {
     z-index: 1000;
 }
 
-
 #navMenu {
     padding: 0;
     line-height: 30px;
     color: black;
     text-align: center;
     margin-right: auto;
+    margin-left: 100px;
     margin-bottom: 50px;
-
 }
 
-#navMenu ul{
-    margin:0;
-    padding:0;
+#navMenu hr{
+    margin-left: -300px;
+}
+
+#navMenu ul {
+    margin: 0;
+    padding: 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 #navMenu li {
-    list-style:none;
-    padding:0;
-    margin:0;
+    list-style: none;
+    padding: 0;
+
     float: left;
     position: relative;
     background: black;
@@ -65,81 +68,76 @@ hr {
     margin-right: auto;
 }
 
-#navMenu ul li a{
-    text-align:center;
-    text-decoration:none;
-    height:30px;
+#navMenu ul li a {
+    text-align: center;
+    text-decoration: none;
+    height: 30px;
     width: 150px;
-    display:block;
+    display: block;
     color: antiquewhite;
-
 }
 
-#navMenu ul ul li{
+#navMenu ul ul li {
     border-radius: 0 0 0 0;
 }
 
 #navMenu ul ul {
     position: absolute;
-    visibility:hidden;
-    top:30px;
-
+    visibility: hidden;
+    top: 30px;
 }
 
-#navMenu ul li:hover ul{
+#navMenu ul li:hover ul {
     visibility: visible;
     transition: .25s ease-in;
     border-radius: 0;
 }
 
 #navMenu li:hover {
-
     background: darkgray;
-
 }
 
-
-#navMenu ul li:hover > ul{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+#navMenu ul li:hover>ul {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border: thin solid white;
     transition: .25s ease-in;
-
 }
 
 #navmenu a:hover {
     color: white;
 }
 
-.mainbody h2, h4{
-    text-align: left;
+.mainbody h2,
+h4 {
+    text-align: center;
     color: white;
 }
 
-.orchestra_list{
+.orchestra_list {
     text-align: left;
 }
 
-.orchestra_list table{
-    width:800px;
+.orchestra_list table {
+    width: 800px;
     float: left;
 }
 
-.orchestra_list table th{
+.orchestra_list table th {
     font-size: 0.9em;
     border: none;
     font-weight: 100;
     min-width: 200px;
 }
 
-.orchestra_list table tr{
+.orchestra_list table tr {
     font-size: 0.9em;
     border: none;
 }
 
+
 /* .container used on first and second level pages to provide white box for content */
 
-.container
-{
+.container {
     height: auto;
     width: 1400px;
     margin-left: auto;
@@ -153,12 +151,12 @@ hr {
     margin-bottom: 50px;
 }
 
-.container h2{
-    text-align: left;
+.container h2 {
+    text-align: center;
     font-size: x-large;
 }
 
-.committee_table{
+.committee_table {
     margin-left: 100px;
     margin-right: 0;
     background-color: antiquewhite;
@@ -171,16 +169,18 @@ hr {
     color: black;
 }
 
-.committee_table tr th{
+.committee_table tr th {
     border: thin solid black;
+    min-width: 100px;
 }
+
 
 /* HOME PAGE SPECIFIC */
 
+
 /* #mainbody centers the image for use on home page. Will eventually be slide show */
 
-.mainbody
-{
+.mainbody {
     color: white;
     text-align: center;
     background-color: black;
@@ -188,13 +188,12 @@ hr {
     margin-left: 100px;
     margin-right: 100px;
 }
-
 
 .align_left {
     text-align: left;
 }
 
-.second_level_body{
+.second_level_body {
     color: white;
     text-align: center;
     background-color: black;
@@ -202,7 +201,6 @@ hr {
     margin-left: 100px;
     margin-right: 100px;
 }
-
 
 .second_level_box {
     display: inline-block;
@@ -211,7 +209,7 @@ hr {
     height: 300px;
     width: 300px;
     background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 0;
     font-size: 2em;
     opacity: 1;
@@ -225,17 +223,28 @@ hr {
     overflow: hidden;
 }
 
-
-.second_level_box:hover{
-    opacity:0.5;
+.second_level_box:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-a:link {text-decoration: none}
-a:link {color:white}
-a:visited {color:white}
-a:hover {color:gray}
+a:link {
+    text-decoration: none
+}
 
-.second_level_box_text{
+a:link {
+    color: white
+}
+
+a:visited {
+    color: white
+}
+
+a:hover {
+    color: gray
+}
+
+.second_level_box_text {
     text-align: left;
     position: absolute;
     bottom: 0;
@@ -246,31 +255,30 @@ a:hover {color:gray}
     font-size: 1em;
     letter-spacing: -1px;
     background: rgb(80, 80, 80);
-    background: rgba(80,80,80,0.7)
+    background: rgba(80, 80, 80, 0.7)
 }
 
-.second_level_box:hover .second_level_box_text{
+.second_level_box:hover .second_level_box_text {
     background: rgb(80, 80, 80);
-    background: rgba(80,80,80,1)
+    background: rgba(80, 80, 80, 1)
 }
 
-.second_level_box_text span.spacer{
-    padding: 0.5px;
+.second_level_box_text span.spacer {
+    padding: 1px;
 }
-
 
 
 /* .breakoutbox used for the four boxes at the bottom of the home page */
 
-.breakoutbox{
+.breakoutbox {
     display: inline-block;
     margin: 0.8%;
     float: left;
     width: 23%;
     height: 400px;
     background-color: black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
     font-size: 1em;
     color: white;
     position: relative;
@@ -279,11 +287,9 @@ a:hover {color:gray}
     overflow: hidden;
     horiz-align: center;
     text-align: center;
-
 }
 
-
-.breakout_text{
+.breakout_text {
     text-align: left;
     position: absolute;
     bottom: 0;
@@ -294,22 +300,24 @@ a:hover {color:gray}
     font-size: 1.5em;
     letter-spacing: -1px;
     background: rgb(80, 80, 80);
-    background: rgba(80,80,80,0.7);
-
+    background: rgba(80, 80, 80, 0.7);
 }
 
-.breakoutbox:hover .breakout_text{
+.breakoutbox:hover .breakout_text {
     background: rgb(80, 80, 80);
-    background: rgba(80,80,80,1)
+    background: rgba(80, 80, 80, 1)
 }
 
-.breakout_text span.spacer{
-    padding: 0.5px;
+.breakout_text span.spacer {
+    padding: 1px;
 }
+
 
 /* INDIVIDUAL PROFILE PAGE USE */
 
+
 /* .float-left is used to shape the text around the profile picture*/
+
 .float-left {
     float: left;
     margin-left: 30px;
@@ -322,20 +330,26 @@ a:hover {color:gray}
     margin-right: 20px;
 }
 
+
 /* h1 formatted for specific use on individual person pages*/
 
-h1{
+h1 {
     margin-left: 30px;
 }
+
+
 /* .artist_body for use on individual profile pages */
 
-h2, h3, h4, h5, h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: white;
 }
 
 
-
-.artist_home{
+.artist_home {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -345,10 +359,9 @@ h2, h3, h4, h5, h6{
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.artist_box{
+.artist_box {
     border: darkslategray thin solid;
     height: 140px;
     width: 98%;
@@ -358,25 +371,22 @@ h2, h3, h4, h5, h6{
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
+    opacity: 0.75;
+    padding: 10px;
 }
 
-
-.committee_home{
-
-    text-align: right;
+.committee_home {
+    text-align: center;
     font-size: .8em;
     color: white;
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-    horiz-align: right;
-
-    Float:left;
-
+    horiz-align: center;
+    Float: left;
 }
-.committee_box{
+
+.committee_box {
     border: darkslategray thin solid;
     height: 140px;
     width: 900px;
@@ -386,35 +396,51 @@ h2, h3, h4, h5, h6{
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
+    opacity: 0.75;
     padding: 10px;
     margin-right: 100px;
-    text-align: left;
-    margin-bottom:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    horiz-align: center;
 }
 
-.committee_box:hover{
+.committee_box:hover {
     opacity: 1;
 }
 
-.committee_box a:link {color:blue}
-.committee_box a:visited {color:blue}
-.committee_box a:hover {color:gray}
+.committee_box a:link {
+    color: blue
+}
 
-.float_artist{
+.committee_box a:visited {
+    color: blue
+}
+
+.committee_box a:hover {
+    color: gray
+}
+
+.float_artist {
     float: left;
     margin: 10px;
     margin-right: 20px;
 }
 
-.artist_box:hover{
-    opacity:1;
+.artist_box:hover {
+    opacity: 1;
 }
 
+.artist_box a:link {
+    color: blue
+}
 
-.artist_box a:link {color:blue}
-.artist_box a:visited {color:blue}
-.artist_box a:hover {color:gray}
+.artist_box a:visited {
+    color: blue
+}
+
+.artist_box a:hover {
+    color: gray
+}
 
 .artist_body {
     color: white;
@@ -428,7 +454,7 @@ h2, h3, h4, h5, h6{
     border: thin white solid;
 }
 
-.featured_artist_breakout{
+.featured_artist_breakout {
     border: darkslategray thin solid;
     height: 400px;
     width: 15%;
@@ -438,16 +464,16 @@ h2, h3, h4, h5, h6{
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
+    opacity: 0.75;
+    padding: 10px;
     float: left;
     overflow: hidden;
 }
 
+
 /* Common foot styling */
 
-#footer
-{
+#footer {
     margin-top: 2em;
     margin-left: 50px;
     height: 1em;
@@ -458,37 +484,47 @@ h2, h3, h4, h5, h6{
     margin-bottom: 50px;
 }
 
-a.footer:link {text-decoration: none}
-a.footer:link {color:white}
-a.footer:visited {color:white}
-a.footer:hover {color:gray}
+a.footer:link {
+    text-decoration: none
+}
 
-#formbox{
+a.footer:link {
+    color: white
+}
+
+a.footer:visited {
+    color: white
+}
+
+a.footer:hover {
+    color: gray
+}
+
+#formbox {
     background-color: black;
     color: white;
 }
 
-form{
+form {
     horiz-align: right;
     background-color: transparent;
 }
 
-
-.sponsor_logos{
-    color:white;
+.sponsor_logos {
+    color: white;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
-.sponsor_logos img{
+.sponsor_logos img {
     height: 200px;
     width: 100px;
 }
 
-.sponsor{
+.sponsor {
     display: inline-block;
     margin-left: 100px;
-    margin-right:0;
+    margin-right: 0;
     margin-top: 0;
     float: left;
     width: auto;
@@ -502,8 +538,6 @@ form{
     border: white thin solid;
     overflow: hidden;
 }
-
-
 
 .slideshow-container {
     max-width: 1000px;
@@ -523,13 +557,21 @@ form{
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .dot {
@@ -541,30 +583,32 @@ form{
 }
 
 .dot_active {
-    background-color: darkorange;
+    background-color: #40B8FF;
 }
 
-
-table{
+table {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-table, th, tr, td {
+table,
+th,
+tr,
+td {
     border: medium solid grey;
     text-align: left;
     font-size: larger;
     border-collapse: collapse;
-
 }
 
-tr, th, td {
+tr,
+th,
+td {
     padding-left: 5px;
-    padding-right:100px;
-
+    padding-right: 100px;
 }
 
-.table_normal{
+.table_normal {
     font-weight: normal;
 }
 
@@ -577,42 +621,36 @@ tr, th, td {
     margin-right: auto;
     margin-bottom: 500px;
     margin-top: 50px;
-
 }
 
-#life_members ul{
-    margin:0;
-    padding:0;
+#life_members ul {
+    padding: 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #life_members li {
-    list-style:none;
-    padding:0;
-    margin:0;
+    list-style: none;
+    padding: 0;
     float: left;
     position: relative;
     border-radius: 5px 5px 0 0;
     margin-left: 20px;
     margin-right: auto;
-
 }
 
-#life_members ul li{
-    text-decoration:none;
-    height:auto;
+#life_members ul li {
+    text-decoration: none;
+    height: auto;
     width: auto;
-    display:block;
+    display: block;
     color: antiquewhite;
-    margin-left:20px;
-
+    margin-left: 20px;
     text-align: left;
 }
 
-#life_members ul li ul li{
+#life_members ul li ul li {
     margin-left: auto;
     width: 400px;
     font-size: 0.8em;
@@ -622,31 +660,28 @@ tr, th, td {
 
 #life_members ul ul {
     position: absolute;
-    visibility:hidden;
-    top:30px;
-
+    visibility: hidden;
+    top: 30px;
 }
 
-#life_members ul li:hover ul li{
+#life_members ul li:hover ul li {
     visibility: visible;
-
     border-radius: 0 0 5px 5px;
     background-color: black;
     border: thin white solid;
-    display:block;
+    display: block;
     padding: 5px;
 }
 
 #life_members li:hover {
-
-    background: darkorange;
+    background: #40B8FF;
 }
 
 #life_members a:hover {
     color: white;
 }
 
-.ticket_form{
+.ticket_form {
     width: 500px;
     float: left;
     line-height: 30px;
@@ -660,7 +695,6 @@ fieldset {
     padding: 0;
     width: 100%;
 }
-
 
 .breakoutbox #sponsor h3 {
     font-family: antic-slab;
@@ -677,11 +711,11 @@ fieldset {
     font-size: large;
 }
 
-#pastconcerts{
+#pastconcerts {
     text-align: left;
 }
 
-#pastconcerts input[type=button]{
+#pastconcerts input[type=button] {
     min-width: 1000px;
     line-height: 30px;
     font-family: antic-slab;
@@ -692,16 +726,19 @@ fieldset {
     text-align: left;
 }
 
-#pastconcerts input[type=button]:active{
-    border:none;
+#pastconcerts input[type=button]:active {
+    border: none;
 }
 
-#pastconcerts input[type=button]:visited{
-    border:none;
+#pastconcerts input[type=button]:visited {
+    border: none;
 }
 
+input[type=button]:hover {
+    cursor: pointer;
+}
 
-.join_us_home{
+.join_us_home {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -711,32 +748,23 @@ fieldset {
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.join_us_box{
+.join_us_box {
     border: darkslategray thin solid;
     height: auto;
-    width: 98%;
+    width: 90%;
     display: inline-block;
-    transition: .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
-}
-
-.join_us_box img{
-    width: 80%;
+    padding: 10px;
 }
 
 .sponsor_form_box img {
     width: 70%;
 }
 
-.benefactor_home{
+.benefactor_home {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -746,25 +774,21 @@ fieldset {
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.benefactor_box{
-    border: darkslategray thin solid;
+.benefactor_box {
+
     height: auto;
-    width: 45%;
+    width: 75%;
     display: inline-block;
-    transition: .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
+    float: left;
 }
 
-.sponsor_form_home{
+.sponsor_form_home {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -774,10 +798,9 @@ fieldset {
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.sponsor_form_box{
+.sponsor_form_box {
     border: darkslategray thin solid;
     height: 140px;
     width: 98%;
@@ -787,10 +810,11 @@ fieldset {
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
+    opacity: 0.75;
+    padding: 10px;
 }
-.buy_tickets_home{
+
+.buy_tickets_home {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -800,10 +824,9 @@ fieldset {
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.buy_tickets_box{
+.buy_tickets_box {
     border: darkslategray thin solid;
     height: 140px;
     width: 98%;
@@ -813,10 +836,11 @@ fieldset {
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
+    opacity: 0.75;
+    padding: 10px;
 }
-.sponsor_box{
+
+.sponsor_box {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -826,10 +850,9 @@ fieldset {
     padding: 10px;
     margin-bottom: 100px;
     display: block;
-
 }
 
-.sponsor_box{
+.sponsor_box {
     border: darkslategray thin solid;
     height: 140px;
     width: 98%;
@@ -839,67 +862,68 @@ fieldset {
     -webkit-transition: opacity .25s ease-in-out;
     color: white;
     text-decoration: none;
-    opacity:0.75;
-    padding:10px;
+    opacity: 0.75;
+    padding: 10px;
 }
+
 #footer {
     clear: both;
 }
+
 body hr {
     clear: both;
 }
 
-#announcement{
+#announcement {
     font-size: large;
     margin-top: 50px;
-    color: darkorange;
+    color: #40B8FF;
     font-weight: bold;
 }
- #announcement a:link{
-     text-decoration: none;
-      }
+
+#announcement a:link {
+    text-decoration: none;
 }
-#committee_left{
-    width:33%;
-    margin-left: 33%;
+
+
+
+#committee_left {
+    width: 33%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
 }
-#committee_left h1{
+#committee_left h1 {
     text-align: center;
-
 }
-#blank{
-    height:315px;
+#blank {
+    height: 315px;
 }
-
-.buy_tickets_home {
-}
+.buy_tickets_home {}
 body .sponsor_form_home .sponsor_form_box {
     height: 370px;
 }
-
 body .buy_tickets_home .buy_tickets_box {
     height: 410px;
 }
-body .sponsor_form_home .sponsor_form_box {
-}
+body .sponsor_form_home .sponsor_form_box {}
 body .buy_tickets_home .join_us_box {
     height: 610px;
 }
 body .buy_tickets_home .benefactor_box {
     height: 520px;
 }
-
-#slideContainer{
-    width:25%;
+#slideContainer {
+    width: 25%;
     margin-left: 40%;
     margin-bottom: 50px;
 }
-#slideContainer h1{
-    margin-left:0;
+#slideContainer h1 {
+    margin-left: 0;
     color: white;
-
 }
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -914,10 +938,10 @@ body .buy_tickets_home .benefactor_box {
 .prev {
     left: 0;
 }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -925,13 +949,13 @@ body .buy_tickets_home .benefactor_box {
     position: absolute;
     top: 0;
 }
-#previous{
-    float:left;
+#previous {
+    float: left;
 }
-#next{
-    float:right;
+#next {
+    float: right;
 }
-#galleryButtons a{
+#galleryButtons a {
     text-decoration: none;
     color: white;
 }

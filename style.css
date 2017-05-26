@@ -189,13 +189,28 @@ hr {
     margin-right: 100px;
 }
 
+
+.align_left {
+    text-align: left;
+}
+
+.second_level_body{
+    color: white;
+    text-align: center;
+    background-color: black;
+    Margin-bottom: 2em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
 .second_level_box {
     display: inline-block;
     position: relative;
     margin: 0.5%;
     height: 300px;
     width: 300px;
-    background-color: lightgray;
+    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 0;
     font-size: 2em;
@@ -206,6 +221,8 @@ hr {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: thin solid white;
+    overflow: hidden;
 }
 
 
@@ -260,9 +277,10 @@ a:hover {color:gray}
     border-radius: 10px;
     border: white thin solid;
     overflow: hidden;
+    horiz-align: center;
+    text-align: center;
 
 }
-
 
 
 .breakout_text{
@@ -557,7 +575,7 @@ tr, th, td {
     text-align: center;
     margin-left: 150px;
     margin-right: auto;
-    margin-bottom: 400px;
+    margin-bottom: 500px;
     margin-top: 50px;
 
 }
@@ -590,7 +608,7 @@ tr, th, td {
     display:block;
     color: antiquewhite;
     margin-left:20px;
-    margin-top: 150px;
+
     text-align: left;
 }
 
@@ -599,6 +617,7 @@ tr, th, td {
     width: 400px;
     font-size: 0.8em;
     line-height: 20px;
+    margin-top: 150px;
 }
 
 #life_members ul ul {
@@ -697,7 +716,7 @@ fieldset {
 
 .join_us_box{
     border: darkslategray thin solid;
-    height: 140px;
+    height: auto;
     width: 98%;
     display: inline-block;
     transition: .25s ease-in-out;
@@ -708,6 +727,15 @@ fieldset {
     opacity:0.75;
     padding:10px;
 }
+
+.join_us_box img{
+    width: 80%;
+}
+
+.sponsor_form_box img {
+    width: 70%;
+}
+
 .benefactor_home{
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -723,8 +751,8 @@ fieldset {
 
 .benefactor_box{
     border: darkslategray thin solid;
-    height: 140px;
-    width: 98%;
+    height: auto;
+    width: 45%;
     display: inline-block;
     transition: .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -733,6 +761,7 @@ fieldset {
     text-decoration: none;
     opacity:0.75;
     padding:10px;
+    text-align: left;
 }
 
 .sponsor_form_home{
@@ -840,4 +869,69 @@ body hr {
 }
 #blank{
     height:315px;
+}
+
+.buy_tickets_home {
+}
+body .sponsor_form_home .sponsor_form_box {
+    height: 370px;
+}
+
+body .buy_tickets_home .buy_tickets_box {
+    height: 410px;
+}
+body .sponsor_form_home .sponsor_form_box {
+}
+body .buy_tickets_home .join_us_box {
+    height: 610px;
+}
+body .buy_tickets_home .benefactor_box {
+    height: 520px;
+}
+
+#slideContainer{
+    width:25%;
+    margin-left: 40%;
+    margin-bottom: 50px;
+}
+#slideContainer h1{
+    margin-left:0;
+    color: white;
+
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    font-size: 50px;
+}
+.next {
+    right: 0;
+}
+.prev {
+    left: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+#previous{
+    float:left;
+}
+#next{
+    float:right;
+}
+#galleryButtons a{
+    text-decoration: none;
+    color: white;
 }
